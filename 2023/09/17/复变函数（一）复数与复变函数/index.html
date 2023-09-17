@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf8"/>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    <title>
+      
+        复变函数（一）复数与复变函数 | Mind Map
+      
+    </title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    
+      <link rel="apple-touch-icon"
+            sizes="180x180"
+            href="/images/apple-touch-icon.png"/>
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon-32x32.png"/>
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/favicon-16x16.png"/>
+    
+    
+      <link rel="mask-icon"
+            href="/images/logo.svg"
+            color=""/>
+    
+    
+    
+      
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/regular.ttf);
+        font-weight: regular;
+    }
+  </style>
+
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/bold.ttf);
+        font-weight: bold;
+    }
+  </style>
+
+
+    
+    <link rel="stylesheet"
+          type="text/css"
+          href='/css/layout.css'/>
+    
+    
+  <link rel="stylesheet" type="text/css" href="/css/post.css" />
+  
+
+  <meta name="generator" content="Hexo 6.3.0"></head>
+  <body>
+    <div class="head">
+      <div class="nav">
+        <a href='/' class="nav-logo">
+          <img alt="logo" height="60px" width="60px" src="/images/logo.png"/>
+        </a>
+        <input id="navBtn" type="checkbox"/>
+        <div class="nav-menu">
+          
+            
+              <a class="nav-menu-item" href="/page1">拾级而上</a>
+            
+          
+          
+        </div>
+        <label class="nav-btn" for="navBtn"></label>
+      </div>
+    </div>
+    <div class="body">
+      
+  <article class="post-content">
+    <div class="post-inner">
+      <div class="post-content__head">
+        <div class="post-title">复变函数（一）复数与复变函数</div>
+        <div class="post-info">
+          
+  
+
+
+          <span class="post-date">2023-09-17</span>
+        </div>
+      </div>
+      
+      <div class="post-content__body">
+        
+          <div class="post-gallery">
+            
+          </div>
+        
+        <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>[[复变函数（一）复数与复变函数]]<br>[[复变函数（二）解析函数]]</p>
+<h1 id="复数"><a href="#复数" class="headerlink" title="复数"></a>复数</h1><h2 id="代数发展"><a href="#代数发展" class="headerlink" title="代数发展"></a>代数发展</h2><p>自然数$\rightarrow$整数（环）$\stackrel{商域}{\rightarrow}$有理数（域）$\stackrel{扩域}{\rightarrow}$实数（域）$\stackrel{扩域}{\rightarrow}$复数（域）<br>整数：最典型的环<br>复数（二元数）：最大的数域、代数闭域<br>四元数（除环，乘法不可交换）、八元数、十六元数……(复数以上称为超复数)<br>内含越大，外沿越少。</p>
+<h1 id="代数"><a href="#代数" class="headerlink" title="代数"></a>代数</h1><h2 id="群环域"><a href="#群环域" class="headerlink" title="群环域"></a>群环域</h2><h3 id="群"><a href="#群" class="headerlink" title="群"></a>群</h3><ul>
+<li>一个二元运算</li>
+<li>运算封闭（乘）</li>
+<li>满足结合律（群）【满足以上两个为半群】</li>
+<li>有幺元（幺）</li>
+<li>有逆元（逆）<br>（如果可以交换，为Abel群）<h1 id="群-1"><a href="#群-1" class="headerlink" title="群"></a>群</h1><h3 id="环"><a href="#环" class="headerlink" title="环"></a>环</h3>在群的基础之上（Abel加法群），加入乘法半群<h1 id="环-1"><a href="#环-1" class="headerlink" title="环"></a>环</h1><h3 id="域"><a href="#域" class="headerlink" title="域"></a>域</h3>在群的基础之上（Abel加法群），加入乘法群（0除外）<br>且乘法与加法满足一定关系<h1 id="域-1"><a href="#域-1" class="headerlink" title="域"></a>域</h1><h3 id="线性空间"><a href="#线性空间" class="headerlink" title="线性空间"></a>线性空间</h3>Abel群+数乘（外运算）<h1 id="线性空间-1"><a href="#线性空间-1" class="headerlink" title="线性空间"></a>线性空间</h1><h3 id="代数-1"><a href="#代数-1" class="headerlink" title="代数"></a>代数</h3>线性空间+环（2个内运算+1个外运算）<h3 id="Lie代数（非结合）"><a href="#Lie代数（非结合）" class="headerlink" title="Lie代数（非结合）"></a>Lie代数（非结合）</h3>$R^3$+叉乘<h3 id="同态、同构"><a href="#同态、同构" class="headerlink" title="同态、同构"></a>同态、同构</h3>$f(z_1+z_2)=f(z_1)+f(z_2)$<br>其中，”加“为定义在各自域内的运算<br>同态：多对一映射<br>同构：一对一映射<h1 id="同态-同构"><a href="#同态-同构" class="headerlink" title="同态 #同构"></a>同态 #同构</h1><h2 id="复数与运算"><a href="#复数与运算" class="headerlink" title="复数与运算"></a>复数与运算</h2></li>
+</ul>
+<ol>
+<li>有序实数对<br> 复数是复数域上的一维线性空间（基：1）  <pre><code> 是实数域上的二维线性空间（基：1，i)
+</code></pre></li>
+<li>复数的表示<ol>
+<li>代数表示</li>
+<li>三角形式（乘除）</li>
+<li>指数形式</li>
+<li>几何形式</li>
+<li>矩阵形式$\begin{bmatrix}a&amp;b\\ -b&amp;a\\\end{bmatrix}$或$\begin{bmatrix}a&amp;-b\\ b&amp;a\\\end{bmatrix}$<ol>
+<li>几何代数 $a+b\sigma_1\sigma_2$<h1 id="运算"><a href="#运算" class="headerlink" title="运算"></a>运算</h1></li>
+</ol>
+</li>
+</ol>
+</li>
+<li>复共轭$z^*$<script type="math/tex; mode=display">x=\dfrac{z+\bar{z}}{2}</script><script type="math/tex; mode=display">y=\dfrac{z-\bar{z}}{2\textrm{i}}</script> 更多地考虑$x,y$不止是复数的实部虚部，则可以实现更==广泛的代换==<br> $\lvert z\rvert^2=\bar{z}\cdot z$</li>
+<li>复数的加法<br> $a+\textrm{i}b\cong\begin{pmatrix}a\\ b\end{pmatrix}$<br> [[高等代数#线性空间的同构]]]<br> 复数与向量在加法上同构，所以复数运算与向量加法相同</li>
+<li>复数的乘法<br> 乘法不满足映射条件（不同构），所以无法类比向量计算<br> 所以采用指数或三角形式计算<br> 采用矩阵形式计算<script type="math/tex">\begin{pmatrix}a&-b\\ b&a\end{pmatrix}\begin{pmatrix}c\\d\end{pmatrix}=(a+\textrm{i}b)(c+\textrm{i}d)</script>【行列对应】<br> ==若==定义内积$<z_1,z_2>=\bar{z_1}\cdot z_2$<br> 则$<z_1,z_2>=(x_1x_2+y_1y_2)+\textrm{i}(x_1y_2-x_2y_1)$<br> 将复数乘法与向量结合，此时定义的内积为复数所对应向量的内积（实部)和外积的模(虚部）</li>
+<li>复数的辐角<br> Arg辐角<br> arg辐角主值$(-\pi,\pi]$<br> 判断$a+\textrm{i}b$辐角<ul>
+<li>分象限讨论</li>
+<li>求半角（$z$不是负实数）<h2 id="思考题"><a href="#思考题" class="headerlink" title="思考题"></a>思考题</h2></li>
+</ul>
+</li>
+<li>用辐角证明三角形内角和是$\pi$</li>
+<li>用复数计算$\cos3\theta,\sin3\theta$</li>
+</ol>
+<h2 id="复数序列"><a href="#复数序列" class="headerlink" title="复数序列"></a>复数序列</h2><p>复数序列等价于2个实数序列</p>
+<ul>
+<li>聚点：$\exists z,\forall \epsilon &gt;0$,恒有无穷多$n$使$\lvert z_n-z\rvert&lt;\epsilon$<br>  聚点不一定是极限，极限一定是唯一聚点<br>  上（下）极限均指聚点$\varlimsup\limits_{n\to \infty}$，$\varliminf\limits_{n\to \infty}$</li>
+<li>有界序列与无界序列  发散序列</li>
+<li>Bolzano Weierstrass定理：一个有界序列至少有一个聚点</li>
+<li>极限：定义与实数相同</li>
+<li>序列收敛的Cauchy充要条件：与实数序列相同<h2 id="复变函数"><a href="#复变函数" class="headerlink" title="复变函数"></a>复变函数</h2></li>
+<li>点集、内点、区域、连通性、单连通域、多连通域、有界区域、无界区域、边界点、闭区域、正方向</li>
+<li>复变函数：$w=f(z),z\in G$<br>  $w=f(z)=u(x,y)+\mathrm{i}v(x,y)$</li>
+<li>无穷远点：以任意方式远离原点，==不在复平面（复数域）内==<br>  其模大于任何正数，辐角不定</li>
+<li>复球面：（映射）过原点，直径为1，则北极为无穷远点</li>
+<li>共形映射：将不好研究的区域通过（保角）映射到一个已经研究成熟的区域</li>
+</ul>
+<h2 id="无穷远点"><a href="#无穷远点" class="headerlink" title="无穷远点"></a>无穷远点</h2><p>模大于任意正数；辐角不定</p>
+<ul>
+<li>Riemann球面（球极映射）</li>
+<li>$\dfrac{1}{t}$与$t$建立转换关系</li>
+</ul>
+
+      </div>
+    </div>
+  </article>
+  <div class="post__foot">
+    
+    <div class="post-nav">
+  
+    <div class="post-nav-item-left"></div>
+  
+  <div class="vhr"></div>
+  
+    <div class="post-nav-item-right"></div>
+  
+</div>
+
+    
+    
+  </div>
+
+    </div>
+    <div class="foot">
+      <div class="foot-inner">
+        <div class="foot__head">
+          
+            <div class="foot-line">
+              
+                <div class="matts">海</div>
+              
+                <div class="matts">内</div>
+              
+                <div class="matts">存</div>
+              
+                <div class="matts">知</div>
+              
+                <div class="matts">己</div>
+              
+            </div>
+          
+            <div class="foot-line">
+              
+                <div class="matts">天</div>
+              
+                <div class="matts">涯</div>
+              
+                <div class="matts">若</div>
+              
+                <div class="matts">比</div>
+              
+                <div class="matts">邻</div>
+              
+            </div>
+          
+        </div>
+        <div class="foot__body">
+          
+          
+          <div class="foot-item">
+            <div class="foot-item__head">联系</div>
+            <div class="foot-item__body">
+              <div class="text">
+                <img alt="link" height="20px" width="20px" src="/images/icon/icon-email.svg"/>
+                <a class="foot-link" href="mailto:2945099066@qq.com">2945099066@qq.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <a href="http://example.com">Mind Map</a> &nbsp;|&nbsp;由&nbsp;<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>&nbsp;及&nbsp;
+          <svg width="20" height="20" viewBox="0 0 725 725">
+            <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M145.870,236.632 L396.955,103.578 L431.292,419.44 L156.600,522.53 L145.870,236.632 Z"/>
+            <path fill-rule="evenodd" fill="rgb(159, 159, 159)" d="M396.955,103.578 L564.345,234.486 L611.558,513.469 L431.292,419.44 L396.955,103.578 Z"/>
+            <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M431.292,419.44 L611.558,513.469 L358.327,595.18 L156.600,522.53 L431.292,419.44 Z"/>
+          </svg>
+          <a target="_blank" rel="noopener" href="https://github.com/hooozen/hexo-theme-tranquility">致远</a>&nbsp;驱动
+        </div>
+      </div>
+    </div>
+    
+      <script src="https://unpkg.com/js-polyfills@0.1.43/es6.js"></script>
+      <script id="MathJax-script"
+              async
+              src="https://www.unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
+    
+    
+  
+
+  </body>
+</html>
