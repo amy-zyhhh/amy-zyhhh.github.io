@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf8"/>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+    <title>
+      
+        弹性力学（二）平面问题基本理论 | Mind Map
+      
+    </title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    
+      <link rel="apple-touch-icon"
+            sizes="180x180"
+            href="/images/apple-touch-icon.png"/>
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/images/favicon-32x32.png"/>
+    
+    
+      <link rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/images/favicon-16x16.png"/>
+    
+    
+      <link rel="mask-icon"
+            href="/images/logo.svg"
+            color=""/>
+    
+    
+    
+      
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/regular.ttf);
+        font-weight: regular;
+    }
+  </style>
+
+  <style>
+    @font-face {
+        font-family:sourceHanSerif;
+        src: url(/font/bold.ttf);
+        font-weight: bold;
+    }
+  </style>
+
+
+    
+    <link rel="stylesheet"
+          type="text/css"
+          href='/css/layout.css'/>
+    
+    
+  <link rel="stylesheet" type="text/css" href="/css/post.css" />
+  
+
+  <meta name="generator" content="Hexo 6.3.0"></head>
+  <body>
+    <div class="head">
+      <div class="nav">
+        <a href='/' class="nav-logo">
+          <img alt="logo" height="60px" width="60px" src="/images/logo.svg"/>
+        </a>
+        <input id="navBtn" type="checkbox"/>
+        <div class="nav-menu">
+          
+            <a class="nav-menu-item" href='/blog/'>博客</a>
+          
+          
+        </div>
+        <label class="nav-btn" for="navBtn"></label>
+      </div>
+    </div>
+    <div class="body">
+      
+  <article class="post-content">
+    <div class="post-inner">
+      <div class="post-content__head">
+        <div class="post-title">弹性力学（二）平面问题基本理论</div>
+        <div class="post-info">
+          
+  
+
+
+          <span class="post-date">2023-09-17</span>
+        </div>
+      </div>
+      
+      <div class="post-content__body">
+        
+          <div class="post-gallery">
+            
+          </div>
+        
+        <h2 id="两类问题（平面应力与平面应变）"><a href="#两类问题（平面应力与平面应变）" class="headerlink" title="两类问题（平面应力与平面应变）"></a>两类问题（平面应力与平面应变）</h2><table>
+<thead>
+<tr>
+<th>问题</th>
+<th>平面应力问题</th>
+<th>平面应变问题</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>问题模型</td>
+<td>等厚度薄板</td>
+<td>等截面的长柱体</td>
+</tr>
+<tr>
+<td>受力</td>
+<td>平等于板面，且不沿厚度变化的面力或约束</td>
+<td>平等于板面，且不沿长度变化的面力或约束</td>
+</tr>
+<tr>
+<td>定量分析</td>
+<td>$\sigma_{z}&#x3D;0,\tau_{zx}&#x3D;0,\tau_{zy}&#x3D;0$（应力、应变、位移均是$x,y$的函数）</td>
+<td>$\tau_{zx}&#x3D;0,\tau_{zy}&#x3D;0$（应力、应变、位移均是$x,y$的函数）</td>
+</tr>
+</tbody></table>
+<h2 id="一点的应力状态"><a href="#一点的应力状态" class="headerlink" title="一点的应力状态"></a>一点的应力状态</h2><p>[[材料力学#一点的应力状态]]<br>方向余弦定义为：$$<br>\begin{cases}<br>\cos(N,x)&#x3D;l\ \cos(N,y)&#x3D;m<br>\end{cases}<br>$$<br>任一方向的 $x,y$ 平等的应力： $$<br>\begin{cases}<br>p_{x}&#x3D;l\sigma_{x}+m\tau_{yx}\<br>p_{y}&#x3D;m\sigma_{y}+l\tau_{xy}<br>\end{cases}<br>$$<br>则，正应力与切应力： $$<br>\begin{cases}<br>\sigma_{N}&#x3D;l^2\sigma_{x}+m^2\sigma_{y}+2lm\tau_{xy}\<br>\tau_{N}&#x3D;lm(\sigma_{y}-\sigma_{x})+(l^2-m^2)\tau_{xy}<br>\end{cases}<br>$$<br>主应力方向(两个主应力方向相互垂直)上： $$<br>\sigma&#x3D;\dfrac{\sigma_{x}+\sigma_{y}}{2}\pm \sqrt{ (\dfrac{\sigma_{x}-\sigma_{y}}{2})^2 +\tau_{xy}^2}<br>$$<br>第一应力不变量： $$<br>\sigma_{1}+\sigma_{2}&#x3D;\sigma_{x}+\sigma_{y}<br>$$<br>最大剪应力发生在与主应力夹角 $45^。$方向上，为 $\pm\dfrac{\sigma_{1}-\sigma_{2}}{2}$</p>
+<h2 id="平衡微分方程"><a href="#平衡微分方程" class="headerlink" title="平衡微分方程"></a>平衡微分方程</h2><p>由于连续性，可以将不同变量的改变量用泰勒级数展开： $$<br>\sigma_{x+\Delta x}&#x3D;\sigma_{x}+\dfrac{ \partial \sigma }{ \partial x } \mathrm{d}x+\dfrac{1}{2!}\dfrac{ \partial^{2} \sigma_{x} }{ \partial x^{2} } \mathrm{d}x^2+\cdots<br>$$<br>略去高阶得： $$<br>\sigma_{x+\Delta x}&#x3D;\sigma_{x}+\dfrac{ \partial \sigma }{ \partial x } \mathrm{d}x<br>$$<br>对于其他应力相同，可以&#x3D;&#x3D;证明切应力互等&#x3D;&#x3D;<br>可以推出： $$<br>\begin{cases}<br>\dfrac{ \partial \sigma_{x} }{ \partial x } +\dfrac{ \partial \tau_{yx} }{ \partial y } +f_{x}&#x3D;0\<br>\dfrac{ \partial \sigma_{y} }{ \partial y } +\dfrac{ \partial \tau_{xy} }{ \partial x } +f_{y}&#x3D;0<br>\end{cases}</p>
+<p>$$<br>几点注意：</p>
+<ul>
+<li>$z$方向算成平衡</li>
+<li>与材料无关</li>
+<li>平面问题适用</li>
+<li>基本假设有连续性、均匀性、小变形</li>
+</ul>
+<h2 id="几何方程"><a href="#几何方程" class="headerlink" title="几何方程"></a>几何方程</h2><p>$$<br>\begin{cases}<br>\varepsilon_{x}&#x3D;\dfrac{ \partial u }{ \partial x } \<br>\varepsilon_{y}&#x3D;\dfrac{ \partial v }{ \partial y } \<br>\gamma_{xy}&#x3D;\dfrac{ \partial u }{ \partial x } +\dfrac{ \partial v }{ \partial y } </p>
+<p>\end{cases}<br>$$</p>
+<ul>
+<li>用两个平行于 $x,y$轴的微小线段表示伸缩与旋转</li>
+<li>用到假设：连续性，均匀性，小变形<br>应变$\nrightarrow$位移，位移$\rightarrow$应变<br>令上方程组为0，得： $$<br>u&#x3D;f_{1}(y),v&#x3D;f_{2}(x)<br>$$<br>由此，可以得到刚体位移（平移+转动）。</li>
+</ul>
+<h2 id="物理方程"><a href="#物理方程" class="headerlink" title="物理方程"></a>物理方程</h2><p>广义胡克定律<br>[[材料力学#广义胡克定律]]<br>三向应力状态（一般情况）下：<br>$$\begin{cases}<br>\varepsilon_x&#x3D;\dfrac{1}{E}[\sigma_x-\nu(\sigma_y+\sigma_z)]\<br>\varepsilon_y&#x3D;\dfrac{1}{E}[\sigma_y-\nu(\sigma_z+\sigma_x)]\<br>\varepsilon_z&#x3D;\dfrac{1}{E}[\sigma_z-\nu(\sigma_x+\sigma_y)]\<br>\gamma_{xy}&#x3D;\dfrac{\tau_{xy}}{G}\<br>\gamma_{xz}&#x3D;\dfrac{\tau_{xz}}{G}\<br>\gamma_{yz}&#x3D;\dfrac{\tau_{yz}}{G}\<br>\end{cases}$$<br>$$<br>G&#x3D;\dfrac{E}{2(1+\nu)}<br>$$</p>
+<ul>
+<li>用到假设：完全弹性，均匀性，各向同性，连续性，小变形</li>
+</ul>
+<p>平面应力下：<br>$$\begin{cases}<br>\varepsilon_x&#x3D;\dfrac{1}{E}(\sigma_x-\nu\sigma_y)\<br>\varepsilon_y&#x3D;\dfrac{1}{E}(\sigma_y-\nu\sigma_z)\<br>\varepsilon_z&#x3D;-\dfrac{\nu}{E}(\sigma_x+\sigma_y)\<br>\gamma_{xy}&#x3D;\dfrac{\tau_{xy}}{G}\<br>\end{cases}$$<br>$$<br>\varepsilon_{z}&#x3D;-\dfrac{\nu}{E}(\sigma_{x}+\sigma_{y})<br>$$<br>上式一般不为0，会产生底面畸变。</p>
+<p>平面应变下：<br>$$<br>\begin{cases}<br>\varepsilon_{x}&#x3D;\dfrac{1+\mu^2}{E}(\sigma_{x}-\dfrac{\mu}{1-\mu}\sigma_{y})\<br>\varepsilon_{y}&#x3D;\dfrac{1+\mu^2}{E}(\sigma_{y}-\dfrac{\mu}{1-\mu}\sigma_{x})\<br>\gamma_{xy}&#x3D;\dfrac{2(1+\mu)}{E}\tau_{xy}<br>\end{cases}</p>
+<p>$$</p>
+<h2 id="边界条件"><a href="#边界条件" class="headerlink" title="边界条件"></a>边界条件</h2><ul>
+<li>精确边界条件为2个，模糊边界条件（圣维南原理）3个<br>  位移边界条件：体现位移保持连续性<br>  应力边界条件：体现平衡微分方程<br>  混合边界条件</li>
+<li>圣维南原理的前提：次要边界上、应力等效</li>
+<li>力矩方向：应力正方向与正力臂的乘积</li>
+</ul>
+<h2 id="位移法求解"><a href="#位移法求解" class="headerlink" title="位移法求解"></a>位移法求解</h2><p>平面应力问题<br>由物理方程反求应力：<br>$$<br> \begin{cases}<br>\sigma_{x}&#x3D;\dfrac{E}{1-\mu^2}(\varepsilon_{x}+\mu\varepsilon_{y})\<br>\sigma_{y}&#x3D;\dfrac{E}{1-\mu^2}(\varepsilon_{y}+\mu\varepsilon_{x})\<br>\tau_{xy}&#x3D;\dfrac{E}{2(1+\mu)}\gamma_{xy}<br>\end{cases}<br>$$<br>可以推出： $$<br> \begin{cases}<br>\sigma_{x}&#x3D;\dfrac{E}{1-\mu^2}(\dfrac{ \partial u }{ \partial x }  +\mu \dfrac{ \partial v }{ \partial y } )\<br>\sigma_{y}&#x3D;\dfrac{E}{1-\mu^2}(\dfrac{ \partial v }{ \partial y }+\mu\dfrac{ \partial u }{ \partial x })\<br>\tau_{xy}&#x3D;\dfrac{E}{2(1+\mu)}(\dfrac{ \partial u }{ \partial x }+\dfrac{ \partial v }{ \partial y })<br>\end{cases}<br>$$<br>代入平衡微分方程：<br>$$<br>\begin{cases}<br>\dfrac{E}{1-\mu^2}(\dfrac{ \partial^{2} u }{ \partial x^{2} } +\dfrac{1-\mu}{2}\dfrac{ \partial^{2} u }{ \partial y^{2} } +\dfrac{1+\mu}{2}\dfrac{ \partial^{2} v }{ \partial x\partial y } )+f_{x}&#x3D;0 \<br>\dfrac{E}{1-\mu^2}(\dfrac{ \partial^{2} v }{ \partial y^{2} } +\dfrac{1-\mu}{2}\dfrac{ \partial^{2} v }{ \partial x^{2} } +\dfrac{1+\mu}{2}\dfrac{ \partial^{2} u }{ \partial x\partial y } )+f_{y}&#x3D;0 \<br>\end{cases}<br>$$<br>另外，边界条件可以写为：<br>$$<br>\begin{cases}<br>\dfrac{E}{1-\mu^2}[l(\dfrac{ \partial u }{ \partial x } +\mu\dfrac{ \partial v }{ \partial y } )<em>{s}+m\dfrac{1-\mu}{2}(\dfrac{ \partial u }{ \partial y } +\dfrac{ \partial v }{ \partial x } )<em>s ]&#x3D;\bar{f</em>{x}}\<br>\dfrac{E}{1-\mu^2}[m(\dfrac{ \partial v }{ \partial y } +\mu\dfrac{ \partial u }{ \partial x } )</em>{s}+l\dfrac{1-\mu}{2}(\dfrac{ \partial v }{ \partial x } +\dfrac{ \partial u }{ \partial y } )<em>{s} ]&#x3D;\bar{f</em>{y}} \<br>\end{cases}<br>$$</p>
+<p>平面应变问题只需要进行材料的参数代换</p>
+<h2 id="力法求解"><a href="#力法求解" class="headerlink" title="力法求解"></a>力法求解</h2><p>平面应力问题<br>相容方程(变形协调)（几何方程）：<br>$$<br>\dfrac{ \partial^{2} \varepsilon_{x} }{ \partial y^{2} } +\dfrac{ \partial^{2} \varepsilon_{y} }{ \partial x^{2} } &#x3D;\dfrac{ \partial^2 \gamma_{xy} }{ \partial x \partial y }<br>$$<br>物理方程：<br>$$<br>\dfrac{ \partial  ^2}{ \partial y^2 }(\sigma_{x}-\mu\sigma_{y})+ \dfrac{ \partial  ^2}{ \partial x^2 }(\sigma_{y}-\mu\sigma_{x})&#x3D;2(1+\mu)\dfrac{ \partial^{2} \tau_{xy} }{ \partial x\partial y}<br>$$<br>平衡微分方程：<br>$$<br>2\dfrac{ \partial^{2} \tau_{xy} }{ \partial x\partial y}&#x3D;-\dfrac{ \partial^{2} \sigma_{x} }{ \partial x^{2} } -\dfrac{ \partial^{2} \sigma_{y} }{ \partial y^{2} } -\dfrac{ \partial f_{x} }{ \partial x } -\dfrac{ \partial f_{y} }{ \partial y } </p>
+<p>$$<br>代入得：<br>$$<br>(\dfrac{ \partial^{2}  }{ \partial x^{2} }+\dfrac{ \partial  }{ \partial y } )(\sigma_{x}+\sigma_{y})&#x3D;-(1+\mu)(\dfrac{ \partial f_{x} }{ \partial x } +\dfrac{ \partial f_{y} }{ \partial y } )<br>$$<br>平面应变问题只需要进行材料的参数代换</p>
+<p>校核：</p>
+<ul>
+<li>平衡微分方程</li>
+<li>相容方程</li>
+<li>&#x3D;&#x3D;边界条件&#x3D;&#x3D;</li>
+<li>单连体可以得到确定解</li>
+</ul>
+<h2 id="常体力情况化简"><a href="#常体力情况化简" class="headerlink" title="常体力情况化简"></a>常体力情况化简</h2><p>相容方程可化为：<br>$$<br>(\dfrac{ \partial^{2}  }{ \partial x^{2} }+\dfrac{ \partial^{2}  }{ \partial y^{2} }  )(\sigma_{x}+\sigma_{y})&#x3D;0<br>$$<br>即： $$<br>\nabla(\sigma_{x}+\sigma_{y})&#x3D;0<br>$$<br>&#x3D;&#x3D;与材料无关&#x3D;&#x3D;</p>
+<h2 id="应力函数"><a href="#应力函数" class="headerlink" title="应力函数"></a>应力函数</h2><p>&#x3D;&#x3D;常体力条件下&#x3D;&#x3D;<br>$$<br>\nabla^4\Phi&#x3D;0<br>$$<br>可以得到： $$<br>\begin{cases}<br>\sigma_{x}&#x3D;\dfrac{ \partial^{2} \Phi }{ \partial y^{2} }  \<br>\sigma_{y}&#x3D;\dfrac{ \partial^{2} \Phi }{ \partial x^{2} }  \<br>\tau_{xy}&#x3D;-\dfrac{ \partial^{2} \Phi }{ \partial x\partial y }<br>\end{cases}<br>$$</p>
+
+      </div>
+    </div>
+  </article>
+  <div class="post__foot">
+    
+    <div class="post-nav">
+  
+    <div class="post-nav-item-left"></div>
+  
+  <div class="vhr"></div>
+  
+    <div class="post-nav-item-right"></div>
+  
+</div>
+
+    
+    
+  </div>
+
+    </div>
+    <div class="foot">
+      <div class="foot-inner">
+        <div class="foot__head">
+          
+            <div class="foot-line">
+              
+                <div class="matts">海</div>
+              
+                <div class="matts">内</div>
+              
+                <div class="matts">存</div>
+              
+                <div class="matts">知</div>
+              
+                <div class="matts">己</div>
+              
+            </div>
+          
+            <div class="foot-line">
+              
+                <div class="matts">天</div>
+              
+                <div class="matts">涯</div>
+              
+                <div class="matts">若</div>
+              
+                <div class="matts">比</div>
+              
+                <div class="matts">邻</div>
+              
+            </div>
+          
+        </div>
+        <div class="foot__body">
+          
+            <div class="foot-item">
+              <div class="foot-item__head">朋友</div>
+              <div class="foot-item__body">
+                
+                  <div class="text">
+                    <img alt="link" height="20px" width="20px" src="/images/icon/icon-link.svg"/>
+                    <a class="foot-link" target="_blank" rel="noopener" href="https://github.com/hooozen/hexo-theme-tranquility">Theme Tranquility</a>
+                  </div>
+                
+                <div class="text">
+                  <img alt="link" height="20px" width="20px" src="/images/icon/icon-link+.svg"/>
+                  <a class="foot-link"
+                     href="mailto:example@email.com?subject=%E7%94%B3%E8%AF%B7%20Hozen.site%20%E7%9A%84%E5%8F%8B%E9%93%BE%E4%BD%8D%E7%BD%AE">
+                  申请友链</a>
+                </div>
+              </div>
+            </div>
+          
+          
+            <div class="foot-item">
+              <div class="foot-item__head">账号</div>
+              <div class="foot-item__body">
+                
+                  <div class="text">
+                    <img alt="link" height="20px" width="20px" src="/images/logo-github.svg"/>
+                    <a class="foot-link" target="_blank" rel="noopener" href="https://github.com/">github</a>
+                  </div>
+                
+                  <div class="text">
+                    <img alt="link" height="20px" width="20px" src="/images/logo-wx.svg"/>
+                    <a class="foot-link" target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s?__biz=MzI3NzQ4NDkzNg==&mid=2247484469&idx=1&sn=8a442bb67397f52cce5c38c3f9b41e36&chksm=eb64c0d2dc1349c40d2e1bb55615ae28b3f2951be22f00717b9ade98c851082e42dc666ab45d#rd">微信公众号</a>
+                  </div>
+                
+                  <div class="text">
+                    <img alt="link" height="20px" width="20px" src="/images/logo-zh.svg"/>
+                    <a class="foot-link" target="_blank" rel="noopener" href="https://www.zhihu.com/">知乎</a>
+                  </div>
+                
+              </div>
+            </div>
+          
+          <div class="foot-item">
+            <div class="foot-item__head">联系</div>
+            <div class="foot-item__body">
+              <div class="text">
+                <img alt="link" height="20px" width="20px" src="/images/icon/icon-email.svg"/>
+                <a class="foot-link" href="mailto:example@email.com">example@email.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <a href="http://example.com">Mind Map</a> &nbsp;|&nbsp;由&nbsp;<a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>&nbsp;及&nbsp;
+          <svg width="20" height="20" viewBox="0 0 725 725">
+            <path fill-rule="evenodd" fill="rgb(221, 221, 221)" d="M145.870,236.632 L396.955,103.578 L431.292,419.44 L156.600,522.53 L145.870,236.632 Z"/>
+            <path fill-rule="evenodd" fill="rgb(159, 159, 159)" d="M396.955,103.578 L564.345,234.486 L611.558,513.469 L431.292,419.44 L396.955,103.578 Z"/>
+            <path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M431.292,419.44 L611.558,513.469 L358.327,595.18 L156.600,522.53 L431.292,419.44 Z"/>
+          </svg>
+          <a target="_blank" rel="noopener" href="https://github.com/hooozen/hexo-theme-tranquility">致远</a>&nbsp;驱动
+        </div>
+      </div>
+    </div>
+    
+    
+  
+
+  </body>
+</html>
