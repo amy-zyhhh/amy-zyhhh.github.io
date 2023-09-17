@@ -90,7 +90,7 @@
         <div class="post-title">弹性力学（二）平面问题基本理论</div>
         <div class="post-info">
           
-  
+  <a href="/tags/hhh/" class="post-tag">#hhh</a>
 
 
           <span class="post-date">2023-09-17</span>
@@ -137,20 +137,20 @@
 <script type="math/tex; mode=display">
 则，正应力与切应力：</script><p>\begin{cases}<br>\sigma_{N}=l^2\sigma_{x}+m^2\sigma_{y}+2lm\tau_{xy}\\<br>\tau_{N}=lm(\sigma_{y}-\sigma_{x})+(l^2-m^2)\tau_{xy}<br>\end{cases}</p>
 <script type="math/tex; mode=display">
-主应力方向(两个主应力方向相互垂直)上：</script><p>\sigma=\dfrac{\sigma_{x}+\sigma_{y}}{2}\pm \sqrt{ (\dfrac{\sigma_{x}-\sigma_{y}}{2})^2 +\tau_{xy}^2}</p>
+主应力方向(两个主应力方向相互垂直)上：</script><p>\sigma=\dfrac{\sigma_{x}+\sigma_{y} } {2}\pm \sqrt{ (\dfrac{\sigma_{x}-\sigma_{y} } {2})^2 +\tau_{xy}^2}</p>
 <script type="math/tex; mode=display">
 第一应力不变量：</script><p>\sigma_{1}+\sigma_{2}=\sigma_{x}+\sigma_{y}</p>
 <script type="math/tex; mode=display">
-最大剪应力发生在与主应力夹角 $45^。$方向上，为 $\pm\dfrac{\sigma_{1}-\sigma_{2}}{2}$
+最大剪应力发生在与主应力夹角 $45^。$方向上，为 $\pm\dfrac{\sigma_{1}-\sigma_{2} } {2}$
 
 ## 平衡微分方程
 
-由于连续性，可以将不同变量的改变量用泰勒级数展开：</script><p>\sigma_{x+\Delta x}=\sigma_{x}+\dfrac{ \partial \sigma }{ \partial x } \mathrm{d}x+\dfrac{1}{2!}\dfrac{ \partial^{2} \sigma_{x} }{ \partial x^{2} } \mathrm{d}x^2+\cdots</p>
+由于连续性，可以将不同变量的改变量用泰勒级数展开：</script><p>\sigma_{x+\Delta x}=\sigma_{x}+\dfrac{ \partial \sigma } { \partial x } \mathrm{d}x+\dfrac{1} {2!}\dfrac{ \partial^{2} \sigma_{x} } { \partial x^{2} } \mathrm{d}x^2+\cdots</p>
 <script type="math/tex; mode=display">
-略去高阶得：</script><p>\sigma_{x+\Delta x}=\sigma_{x}+\dfrac{ \partial \sigma }{ \partial x } \mathrm{d}x</p>
+略去高阶得：</script><p>\sigma_{x+\Delta x}=\sigma_{x}+\dfrac{ \partial \sigma } { \partial x } \mathrm{d}x</p>
 <script type="math/tex; mode=display">
 对于其他应力相同，可以==证明切应力互等==
-可以推出：</script><p>\begin{cases}<br>\dfrac{ \partial \sigma_{x} }{ \partial x } +\dfrac{ \partial \tau_{yx} }{ \partial y } +f_{x}=0\\<br>\dfrac{ \partial \sigma_{y} }{ \partial y } +\dfrac{ \partial \tau_{xy} }{ \partial x } +f_{y}=0<br>\end{cases}</p>
+可以推出：</script><p>\begin{cases}<br>\dfrac{ \partial \sigma_{x} } { \partial x } +\dfrac{ \partial \tau_{yx} } { \partial y } +f_{x}=0\\<br>\dfrac{ \partial \sigma_{y} } { \partial y } +\dfrac{ \partial \tau_{xy} } { \partial x } +f_{y}=0<br>\end{cases}</p>
 <script type="math/tex; mode=display">
 几点注意：
 - $z$方向算成平衡
@@ -158,7 +158,7 @@
 - 平面问题适用
 - 基本假设有连续性、均匀性、小变形
 
-## 几何方程</script><p>\begin{cases}<br>\varepsilon_{x}=\dfrac{ \partial u }{ \partial x } \\<br>\varepsilon_{y}=\dfrac{ \partial v }{ \partial y } \\<br>\gamma_{xy}=\dfrac{ \partial u }{ \partial x } +\dfrac{ \partial v }{ \partial y } </p>
+## 几何方程</script><p>\begin{cases}<br>\varepsilon_{x}=\dfrac{ \partial u } { \partial x } \\<br>\varepsilon_{y}=\dfrac{ \partial v } { \partial y } \\<br>\gamma_{xy}=\dfrac{ \partial u } { \partial x } +\dfrac{ \partial v } { \partial y } </p>
 <p>\end{cases}</p>
 <script type="math/tex; mode=display">
 - 用两个平行于 $x,y$轴的微小线段表示伸缩与旋转
@@ -173,30 +173,30 @@
 [[材料力学#广义胡克定律]]
 三向应力状态（一般情况）下：
 $$\begin{cases}
-\varepsilon_x=\dfrac{1}{E}[\sigma_x-\nu(\sigma_y+\sigma_z)]\\
-\varepsilon_y=\dfrac{1}{E}[\sigma_y-\nu(\sigma_z+\sigma_x)]\\
-\varepsilon_z=\dfrac{1}{E}[\sigma_z-\nu(\sigma_x+\sigma_y)]\\
-\gamma_{xy}=\dfrac{\tau_{xy}}{G}\\
-\gamma_{xz}=\dfrac{\tau_{xz}}{G}\\
-\gamma_{yz}=\dfrac{\tau_{yz}}{G}\\
+\varepsilon_x=\dfrac{1} {E}[\sigma_x-\nu(\sigma_y+\sigma_z)]\\
+\varepsilon_y=\dfrac{1} {E}[\sigma_y-\nu(\sigma_z+\sigma_x)]\\
+\varepsilon_z=\dfrac{1} {E}[\sigma_z-\nu(\sigma_x+\sigma_y)]\\
+\gamma_{xy}=\dfrac{\tau_{xy} } {G}\\
+\gamma_{xz}=\dfrac{\tau_{xz} } {G}\\
+\gamma_{yz}=\dfrac{\tau_{yz} } {G}\\
 \end{cases}</script><script type="math/tex; mode=display">
-G=\dfrac{E}{2(1+\nu)}</script><ul>
+G=\dfrac{E} {2(1+\nu)}</script><ul>
 <li>用到假设：完全弹性，均匀性，各向同性，连续性，小变形</li>
 </ul>
 <p>平面应力下：</p>
 <script type="math/tex; mode=display">\begin{cases}
-\varepsilon_x=\dfrac{1}{E}(\sigma_x-\nu\sigma_y)\\
-\varepsilon_y=\dfrac{1}{E}(\sigma_y-\nu\sigma_z)\\
-\varepsilon_z=-\dfrac{\nu}{E}(\sigma_x+\sigma_y)\\
-\gamma_{xy}=\dfrac{\tau_{xy}}{G}\\
+\varepsilon_x=\dfrac{1} {E}(\sigma_x-\nu\sigma_y)\\
+\varepsilon_y=\dfrac{1} {E}(\sigma_y-\nu\sigma_z)\\
+\varepsilon_z=-\dfrac{\nu} {E}(\sigma_x+\sigma_y)\\
+\gamma_{xy}=\dfrac{\tau_{xy} } {G}\\
 \end{cases}</script><script type="math/tex; mode=display">
-\varepsilon_{z}=-\dfrac{\nu}{E}(\sigma_{x}+\sigma_{y})</script><p>上式一般不为0，会产生底面畸变。</p>
+\varepsilon_{z}=-\dfrac{\nu} {E}(\sigma_{x}+\sigma_{y})</script><p>上式一般不为0，会产生底面畸变。</p>
 <p>平面应变下：</p>
 <script type="math/tex; mode=display">
 \begin{cases}
-\varepsilon_{x}=\dfrac{1+\mu^2}{E}(\sigma_{x}-\dfrac{\mu}{1-\mu}\sigma_{y})\\ 
-\varepsilon_{y}=\dfrac{1+\mu^2}{E}(\sigma_{y}-\dfrac{\mu}{1-\mu}\sigma_{x})\\
-\gamma_{xy}=\dfrac{2(1+\mu)}{E}\tau_{xy}
+\varepsilon_{x}=\dfrac{1+\mu^2} {E}(\sigma_{x}-\dfrac{\mu} {1-\mu}\sigma_{y})\\ 
+\varepsilon_{y}=\dfrac{1+\mu^2} {E}(\sigma_{y}-\dfrac{\mu} {1-\mu}\sigma_{x})\\
+\gamma_{xy}=\dfrac{2(1+\mu)} {E}\tau_{xy}
 \end{cases}</script><h2 id="边界条件"><a href="#边界条件" class="headerlink" title="边界条件"></a>边界条件</h2><ul>
 <li>精确边界条件为2个，模糊边界条件（圣维南原理）3个<br>  位移边界条件：体现位移保持连续性<br>  应力边界条件：体现平衡微分方程<br>  混合边界条件</li>
 <li>圣维南原理的前提：次要边界上、应力等效</li>
@@ -205,27 +205,27 @@ G=\dfrac{E}{2(1+\nu)}</script><ul>
 <h2 id="位移法求解"><a href="#位移法求解" class="headerlink" title="位移法求解"></a>位移法求解</h2><p>平面应力问题<br>由物理方程反求应力：</p>
 <script type="math/tex; mode=display">
  \begin{cases}
-\sigma_{x}=\dfrac{E}{1-\mu^2}(\varepsilon_{x}+\mu\varepsilon_{y})\\ 
-\sigma_{y}=\dfrac{E}{1-\mu^2}(\varepsilon_{y}+\mu\varepsilon_{x})\\
-\tau_{xy}=\dfrac{E}{2(1+\mu)}\gamma_{xy}
-\end{cases}</script><p>可以推出： $$<br> \begin{cases}<br>\sigma_{x}=\dfrac{E}{1-\mu^2}(\dfrac{ \partial u }{ \partial x }  +\mu \dfrac{ \partial v }{ \partial y } )\\<br>\sigma_{y}=\dfrac{E}{1-\mu^2}(\dfrac{ \partial v }{ \partial y }+\mu\dfrac{ \partial u }{ \partial x })\\<br>\tau_{xy}=\dfrac{E}{2(1+\mu)}(\dfrac{ \partial u }{ \partial x }+\dfrac{ \partial v }{ \partial y })<br>\end{cases}</p>
+\sigma_{x}=\dfrac{E} {1-\mu^2}(\varepsilon_{x}+\mu\varepsilon_{y})\\ 
+\sigma_{y}=\dfrac{E} {1-\mu^2}(\varepsilon_{y}+\mu\varepsilon_{x})\\
+\tau_{xy}=\dfrac{E} {2(1+\mu)}\gamma_{xy}
+\end{cases}</script><p>可以推出： $$<br> \begin{cases}<br>\sigma_{x}=\dfrac{E} {1-\mu^2}(\dfrac{ \partial u } { \partial x }  +\mu \dfrac{ \partial v } { \partial y } )\\<br>\sigma_{y}=\dfrac{E} {1-\mu^2}(\dfrac{ \partial v } { \partial y }+\mu\dfrac{ \partial u } { \partial x })\\<br>\tau_{xy}=\dfrac{E} {2(1+\mu)}(\dfrac{ \partial u } { \partial x }+\dfrac{ \partial v } { \partial y })<br>\end{cases}</p>
 <script type="math/tex; mode=display">
-代入平衡微分方程：</script><p>\begin{cases}<br>\dfrac{E}{1-\mu^2}(\dfrac{ \partial^{2} u }{ \partial x^{2} } +\dfrac{1-\mu}{2}\dfrac{ \partial^{2} u }{ \partial y^{2} } +\dfrac{1+\mu}{2}\dfrac{ \partial^{2} v }{ \partial x\partial y } )+f_{x}=0 \\<br>\dfrac{E}{1-\mu^2}(\dfrac{ \partial^{2} v }{ \partial y^{2} } +\dfrac{1-\mu}{2}\dfrac{ \partial^{2} v }{ \partial x^{2} } +\dfrac{1+\mu}{2}\dfrac{ \partial^{2} u }{ \partial x\partial y } )+f_{y}=0 \\<br>\end{cases}</p>
+代入平衡微分方程：</script><p>\begin{cases}<br>\dfrac{E} {1-\mu^2}(\dfrac{ \partial^{2} u } { \partial x^{2} } +\dfrac{1-\mu} {2}\dfrac{ \partial^{2} u } { \partial y^{2} } +\dfrac{1+\mu} {2}\dfrac{ \partial^{2} v } { \partial x\partial y } )+f_{x}=0 \\<br>\dfrac{E} {1-\mu^2}(\dfrac{ \partial^{2} v } { \partial y^{2} } +\dfrac{1-\mu} {2}\dfrac{ \partial^{2} v } { \partial x^{2} } +\dfrac{1+\mu} {2}\dfrac{ \partial^{2} u } { \partial x\partial y } )+f_{y}=0 \\<br>\end{cases}</p>
 <script type="math/tex; mode=display">
-另外，边界条件可以写为：</script><p>\begin{cases}<br>\dfrac{E}{1-\mu^2}[l(\dfrac{ \partial u }{ \partial x } +\mu\dfrac{ \partial v }{ \partial y } )_{s}+m\dfrac{1-\mu}{2}(\dfrac{ \partial u }{ \partial y } +\dfrac{ \partial v }{ \partial x } )_s ]=\bar{f_{x}}\\<br>\dfrac{E}{1-\mu^2}[m(\dfrac{ \partial v }{ \partial y } +\mu\dfrac{ \partial u }{ \partial x } )_{s}+l\dfrac{1-\mu}{2}(\dfrac{ \partial v }{ \partial x } +\dfrac{ \partial u }{ \partial y } )_{s} ]=\bar{f_{y}} \\<br>\end{cases}</p>
+另外，边界条件可以写为：</script><p>\begin{cases}<br>\dfrac{E} {1-\mu^2}[l(\dfrac{ \partial u } { \partial x } +\mu\dfrac{ \partial v } { \partial y } )_{s}+m\dfrac{1-\mu} {2}(\dfrac{ \partial u } { \partial y } +\dfrac{ \partial v } { \partial x } )_s ]=\bar{f_{x} }\\<br>\dfrac{E} {1-\mu^2}[m(\dfrac{ \partial v } { \partial y } +\mu\dfrac{ \partial u } { \partial x } )_{s}+l\dfrac{1-\mu} {2}(\dfrac{ \partial v } { \partial x } +\dfrac{ \partial u } { \partial y } )_{s} ]=\bar{f_{y} } \\<br>\end{cases}</p>
 <script type="math/tex; mode=display">
 
 平面应变问题只需要进行材料的参数代换
 
 ## 力法求解
 平面应力问题
-相容方程(变形协调)（几何方程）：</script><p>\dfrac{ \partial^{2} \varepsilon_{x} }{ \partial y^{2} } +\dfrac{ \partial^{2} \varepsilon_{y} }{ \partial x^{2} } =\dfrac{ \partial^2 \gamma_{xy} }{ \partial x \partial y } </p>
+相容方程(变形协调)（几何方程）：</script><p>\dfrac{ \partial^{2} \varepsilon_{x} } { \partial y^{2} } +\dfrac{ \partial^{2} \varepsilon_{y} } { \partial x^{2} } =\dfrac{ \partial^2 \gamma_{xy} } { \partial x \partial y } </p>
 <script type="math/tex; mode=display">
-物理方程：</script><p>\dfrac{ \partial  ^2}{ \partial y^2 }(\sigma_{x}-\mu\sigma_{y})+ \dfrac{ \partial  ^2}{ \partial x^2 }(\sigma_{y}-\mu\sigma_{x})=2(1+\mu)\dfrac{ \partial^{2} \tau_{xy} }{ \partial x\partial y} </p>
+物理方程：</script><p>\dfrac{ \partial  ^2} { \partial y^2 }(\sigma_{x}-\mu\sigma_{y})+ \dfrac{ \partial  ^2} { \partial x^2 }(\sigma_{y}-\mu\sigma_{x})=2(1+\mu)\dfrac{ \partial^{2} \tau_{xy} } { \partial x\partial y} </p>
 <script type="math/tex; mode=display">
-平衡微分方程：</script><p>2\dfrac{ \partial^{2} \tau_{xy} }{ \partial x\partial y}=-\dfrac{ \partial^{2} \sigma_{x} }{ \partial x^{2} } -\dfrac{ \partial^{2} \sigma_{y} }{ \partial y^{2} } -\dfrac{ \partial f_{x} }{ \partial x } -\dfrac{ \partial f_{y} }{ \partial y } </p>
+平衡微分方程：</script><p>2\dfrac{ \partial^{2} \tau_{xy} } { \partial x\partial y}=-\dfrac{ \partial^{2} \sigma_{x} } { \partial x^{2} } -\dfrac{ \partial^{2} \sigma_{y} } { \partial y^{2} } -\dfrac{ \partial f_{x} } { \partial x } -\dfrac{ \partial f_{y} } { \partial y } </p>
 <script type="math/tex; mode=display">
-代入得：</script><p>(\dfrac{ \partial^{2}  }{ \partial x^{2} }+\dfrac{ \partial  }{ \partial y } )(\sigma_{x}+\sigma_{y})=-(1+\mu)(\dfrac{ \partial f_{x} }{ \partial x } +\dfrac{ \partial f_{y} }{ \partial y } ) </p>
+代入得：</script><p>(\dfrac{ \partial^{2}  } { \partial x^{2} }+\dfrac{ \partial  } { \partial y } )(\sigma_{x}+\sigma_{y})=-(1+\mu)(\dfrac{ \partial f_{x} } { \partial x } +\dfrac{ \partial f_{y} } { \partial y } ) </p>
 <script type="math/tex; mode=display">
 平面应变问题只需要进行材料的参数代换
 
@@ -236,7 +236,7 @@ G=\dfrac{E}{2(1+\nu)}</script><ul>
 - 单连体可以得到确定解
 
 ## 常体力情况化简
-相容方程可化为：</script><p>(\dfrac{ \partial^{2}  }{ \partial x^{2} }+\dfrac{ \partial^{2}  }{ \partial y^{2} }  )(\sigma_{x}+\sigma_{y})=0</p>
+相容方程可化为：</script><p>(\dfrac{ \partial^{2}  } { \partial x^{2} }+\dfrac{ \partial^{2}  } { \partial y^{2} }  )(\sigma_{x}+\sigma_{y})=0</p>
 <script type="math/tex; mode=display">
 即：</script><p>\nabla(\sigma_{x}+\sigma_{y})=0</p>
 <script type="math/tex; mode=display">
@@ -245,7 +245,7 @@ G=\dfrac{E}{2(1+\nu)}</script><ul>
 ## 应力函数
 ==常体力条件下==</script><p>\nabla^4\Phi=0</p>
 <script type="math/tex; mode=display">
-可以得到：</script><p>\begin{cases}<br>\sigma_{x}=\dfrac{ \partial^{2} \Phi }{ \partial y^{2} }  \\<br>\sigma_{y}=\dfrac{ \partial^{2} \Phi }{ \partial x^{2} }  \\<br>\tau_{xy}=-\dfrac{ \partial^{2} \Phi }{ \partial x\partial y }<br>\end{cases}</p>
+可以得到：</script><p>\begin{cases}<br>\sigma_{x}=\dfrac{ \partial^{2} \Phi } { \partial y^{2} }  \\<br>\sigma_{y}=\dfrac{ \partial^{2} \Phi } { \partial x^{2} }  \\<br>\tau_{xy}=-\dfrac{ \partial^{2} \Phi } { \partial x\partial y }<br>\end{cases}</p>
 <p>$$</p>
 
       </div>
