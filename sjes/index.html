@@ -85,7 +85,7 @@
     </div>
     <div class="body">
       
-  <div class="wall wall-category">
+  <div class="wall wall-category--plain">
     <div class="wall-main">
       <div class="wall-category-title">
         <div class="title-icon"
@@ -94,7 +94,7 @@
       </div>
       <div class="wall-category-description"></div>
       <div class="wall-category-tags">
-        <div id="tags-outer"><canvas width="500" height="500" id="tagCanvas"><a href="/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" style="font-size: 22px;">复变函数</a> <a href="/tags/%E5%AE%9E%E9%AA%8C%E5%8A%9B%E5%AD%A6/" style="font-size: 14px;">实验力学</a> <a href="/tags/%E5%BC%B9%E6%80%A7%E5%8A%9B%E5%AD%A6/" style="font-size: 30px;">弹性力学</a> <a href="/tags/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/" style="font-size: 14px;">数值计算方法</a><canvas></div>
+        <div id="tags-outer"><a href="/tags/%E5%A4%8D%E5%8F%98%E5%87%BD%E6%95%B0/" style="font-size: 1em;">复变函数</a> <a href="/tags/%E5%AE%9E%E9%AA%8C%E5%8A%9B%E5%AD%A6/" style="font-size: 1em;">实验力学</a> <a href="/tags/%E5%BC%B9%E6%80%A7%E5%8A%9B%E5%AD%A6/" style="font-size: 1em;">弹性力学</a> <a href="/tags/%E6%95%B0%E5%80%BC%E8%AE%A1%E7%AE%97%E6%96%B9%E6%B3%95/" style="font-size: 1em;">数值计算方法</a></div>
       </div>
     </div>
   </div>
@@ -297,35 +297,6 @@
               src="https://www.unpkg.com/mathjax@3.2.2/es5/tex-mml-chtml.js"></script>
     
     
-  
-    <script type="text/javascript"
-            charset="utf-8"
-            src="/js/tagcanvas.min.js"></script>
-    <script type = "text/javascript">
-        window.onload = function() {
-            try {
-                TagCanvas.Start('tagCanvas', '', {
-                    outlineThickness: 1,
-                    maxSpeed: 0.03,
-                    // freezeActive: true,
-                    // freezeDecel: true,
-                    textColour: null,
-                    textColour: null,
-                    outlineColour: "#aaa",
-                    weight: true,
-                    padding: 4,
-                    // clickToFront: 200,
-                    fadIn: 200,
-                    // pinchZoom: true,
-                    wheelZoom: false,
-                    initial: [0.1, -0.03]
-                });
-            } catch (e) {
-                // something went wrong, hide the canvas container
-                document.getElementById('tags-outer').style.display = 'none';
-            }
-        };
-    </script>
   
 
   </body>
